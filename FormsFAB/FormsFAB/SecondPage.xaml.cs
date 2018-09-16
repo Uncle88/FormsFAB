@@ -1,22 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace FormsFAB
 {
-    public partial class MainPage : ContentPage
+    public partial class SecondPage : ContentPage
     {
-        public MainPage()
+        public SecondPage()
         {
             InitializeComponent();
         }
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            this.Navigation.PushAsync(new SecondPage());
+            this.Navigation.PopAsync();
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
