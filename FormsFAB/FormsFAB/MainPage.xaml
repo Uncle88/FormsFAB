@@ -1,7 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:FormsFAB" x:Class="FormsFAB.MainPage">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:FormsFAB" 
+             xmlns:controls="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
+             x:Class="FormsFAB.MainPage">
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    <Button Text="NavButton" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Clicked="Handle_Clicked"/>
+        <controls:FloatingActionButton x:Name="FAB" HorizontalOptions="CenterAndExpand" WidthRequest="50" HeightRequest="50"  VerticalOptions="CenterAndExpand" Image="icon_floating_button.png" ButtonColor="#03A9F4" Clicked="Button_Clicked"/>
     </StackLayout>
 </ContentPage>
